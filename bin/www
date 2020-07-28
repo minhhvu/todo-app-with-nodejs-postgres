@@ -8,13 +8,13 @@ var app = require('../app');
 var debug = require('debug')('todo-app-with-nodejs-postgres:server');
 var http = require('http');
 
-const DEFAULT_PORT = '3003'
+// const DEFAULT_PORT = '3003'
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || DEFAULT_PORT);
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
