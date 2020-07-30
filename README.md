@@ -26,8 +26,8 @@ Node.js, NPM/YARN and Postgres
 * Go to .env file in the project directory to configure the database server, including database name, user, password, port and host
 ### Initialize the database
 * On the terminal, navigate into the project directory
-* Create all the tables using `sequelize db:migrate`
-* Run the database seeds using `sequelize db:seed:all`
+* Create all the tables using `npx sequelize-cli db:migrate`
+* Run the database seeds using `npx sequelize-cli db:seed:all`
 ### Start the server
 * Start the server using `npm start`
 * Server runs on port 3003
