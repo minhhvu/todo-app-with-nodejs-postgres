@@ -3,7 +3,7 @@
 //   Model
 // } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  const TodoUser = sequelize.define('TodoUser', {
+  const TodoUser = sequelize.define('TodoUsers', {
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
