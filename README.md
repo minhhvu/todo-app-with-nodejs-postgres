@@ -32,9 +32,8 @@ Node.js, NPM/YARN and Postgres
 * Start the server using `npm start`
 * Server runs on port 3003
 
-## API document
-
-## cURL test
+## API document and cURL test
+To test apis with cURL, go to my publish api doccument at https://documenter.getpostman.com/view/10407284/T1DtfbX2
 
 ## ERD Diagram
 <img src="https://github.com/minhhvu/todo-app-with-nodejs-postgres/blob/master/public/images/erd_diagram.png" alt="App internface" title="App interface" align="center"/>
