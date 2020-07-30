@@ -23,7 +23,7 @@ Node.js, NPM/YARN and Postgres
 * Install dependencies using `npm install`
 ### Setting up database infor in file .env variables
 * Create a database using pgAdmin 4 or pSLG shell
-* Go to .env file in the project directory to config the database, including database name, user, password, port and host
+* Go to .env file in the project directory to configure the database server, including database name, user, password, port and host
 ### Initialize the database
 * On the terminal, navigate into the project directory
 * Create all the tables using `sequelize db:migrate`
