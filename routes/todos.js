@@ -14,6 +14,4 @@ router.put('/done/:id', function (req, res, next) {
   next()
 }, updateTodo)
 
-//Api to assign multiple users into a todo
-
 module.exports = router
