@@ -11,7 +11,6 @@ const assignUsers = [vadilateBody('userIds'), asyncHandle(async (req, res, next)
   //Get list of userIds
   const userIds = req.body.userIds;
   const todoId = req.params.id;
-  console.log(userIds, todoId)
   //Valid the todoId and userId
   let todo = await Todo.findByPk(todoId);
   if (!todo) {
@@ -20,10 +19,8 @@ const assignUsers = [vadilateBody('userIds'), asyncHandle(async (req, res, next)
     })
     return;
   }
-  // console.log(todo)
   let promises = userIds.map(async id => await User.findByPk(id))
-  let users = await Promise.all(promises)//.then(async values // => {console.log(value); return await User.findByPk(value)});
-  console.log(users.map(u => u.id))
+  let users = await Promise.all(promises)
   for  (let user of users) {
     if (user == undefined) {
       res.status(403).json({

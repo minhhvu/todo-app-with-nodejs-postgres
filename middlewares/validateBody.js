@@ -1,5 +1,5 @@
 module.exports = (...keys) => (req, res, next) => {
-  // console.log(req)
+
   const body = req.body;
   let missing = [];
   for (let key of keys){

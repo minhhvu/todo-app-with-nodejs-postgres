@@ -82,11 +82,9 @@ const updateTodo = asyncHandle(async (req, res, next) => {
   let newTodo = {}
   for (let key of keys){
     if (req.body[key]){
-      // console.log(key)
       newTodo[key] = req.body[key]
     }
   }
-  // console.log(newTodo)
   await todo.set(newTodo);
   todo = await todo.save();
 
@@ -96,34 +94,7 @@ const updateTodo = asyncHandle(async (req, res, next) => {
 })
 
 
-//test User db
-const testDb = async (req, res, next) => {
-  try {
-    let newUser = {name: 'Minh Hai'}
-    await User.create(newUser);
-    res.json({success: true})
-  } catch (e) {
-    console.log(e)
-    res.json({error: e.message})
-  }
-}
-
-//test Todo db
-
-const testTodoDb = async (req, res, next) => {
-  try {
-    let newTodo = {title: 'new todo 1', date: Date.now(), isDone: false}
-    await Todo.create(newTodo);
-    res.json({success: true})
-  } catch (e) {
-    console.log(e)
-    res.json({error: e.message})
-  }
-}
-
 module.exports ={
-  testDb,
-  testTodoDb,
   getAllTodos,
   updateTodo,
   createTodo
