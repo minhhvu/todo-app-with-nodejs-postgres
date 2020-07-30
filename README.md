@@ -2,6 +2,12 @@
 
 # todo-app-with-nodejs-postgres
 Build an http server to support a todolist web app with this UI
+Features:
+* API support to get list of todos, create a todo and edit a todo
+* API to assign multiple users into a todo
+* API to set a todo as done
+* Group the todos by date (today, tomorrow, August 1st, ...)
+
 
 ## Backend Tech stack
 * Express/Node.js - The backend framework and language
@@ -29,4 +35,7 @@ Node.js, NPM/YARN and Postgres
 ## API document
 
 ## cURL test
+
+## ERD Diagram
+<img src="https://github.com/minhhvu/todo-app-with-nodejs-postgres/blob/master/public/images/erd_diagram.png" alt="App internface" title="App interface" align="center"/>
 
