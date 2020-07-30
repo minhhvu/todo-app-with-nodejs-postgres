@@ -1,6 +1,6 @@
+<img src="\public\images\app.jpg" alt="app internface" title="App interface" align="center" />
 # todo-app-with-nodejs-postgres
 Build an http server to support a todolist web app with this UI
-<img src="\public\images\app.jpg" alt="app internface" title="App interface" align="center" />
 
 ## Backend Tech stack
 * Express/Node.js - The backend framework and language
