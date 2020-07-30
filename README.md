@@ -1,4 +1,5 @@
-<img src="\public\images\app.png" alt="app internface" title="App interface" align="center" height="50"/>
+<img src="\public\images\app.png" alt="App internface" title="App interface" align="center"/>
+
 # todo-app-with-nodejs-postgres
 Build an http server to support a todolist web app with this UI
 
