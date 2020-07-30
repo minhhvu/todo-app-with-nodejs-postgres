@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var todoRouter = require('./routes/todos');
+var todosRouter = require('./routes/todos');
+var todoUsersRouter = require('./routes/todousers');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -18,7 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/v1/users', usersRouter);
-app.use('/api/v1/todos', todoRouter);
+app.use('/api/v1/todos', todosRouter);
+app.use('/api/v1/todousers', todoUsersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -35,7 +37,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.json({error: 'something wrong'});
+  res.json({error: 'internal server error'});
   // res.render('error');
 });
 
