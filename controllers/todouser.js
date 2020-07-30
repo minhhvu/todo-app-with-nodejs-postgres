@@ -11,6 +11,7 @@ const assignUsers = [vadilateBody('userIds'), asyncHandle(async (req, res, next)
   //Get list of userIds
   const userIds = req.body.userIds;
   const todoId = req.params.id;
+
   //Valid the todoId and userId
   let todo = await Todo.findByPk(todoId);
   if (!todo) {
