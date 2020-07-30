@@ -4,11 +4,13 @@ const validateBody = require('../middlewares/validateBody')
 const {convertToDate, getToday, getCustomizedDateFormat} = require('../ultilities/CustomizedDateFormat')
 
 const Todo = db.Todos
+const User = db.Users
 //config the object attribute from todo model
 const todoObjectOption = {
   attributes: {
-    exclude: ["createdAt", "updatedAt"]
-  }
+    exclude: ["createdAt", "updatedAt"],
+  },
+  include: User
 }
 
 //@desc get list of all todos

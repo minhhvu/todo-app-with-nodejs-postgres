@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = (models) => {
     User.belongsToMany(models.Todos, {
       through: "TodoUsers",
-      as: 'todos',
+      // as: 'todos',
       foreignKey: 'userId'
     })
   }
